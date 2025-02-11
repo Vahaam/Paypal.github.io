@@ -33,7 +33,8 @@
         h1 {
             font-family: 'wof';
             font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 1.5;
     font-weight: bolder;
     margin: 0px 12px 10px 12px;
     margin-bottom: 15px;
@@ -43,9 +44,9 @@
             font-family: 'wof2';
             letter-spacing: -0.5px;
             font-weight: 100;
-            font-size: 15px;
-    color: #363636;
-    margin: 0.5rem 1.5rem 0rem 1.5rem;
+            font-size: 17px;
+    color: #363636; 
+    margin: 0.5rem 1.8rem 0rem 1.8rem;
         }
         .contenedor-botones {
             position: fixed;
@@ -70,26 +71,47 @@
             font-weight: bold;
         }
         .enlace {
-            font-family: wof;
-            color: #0000ed;
-    font-size: 10px;
-    margin-top: 10px;
+            font-family: 'wof';
+            font-weight: bold;
+            letter-spacing: -0.2px;
+            color: #3F7AEE;
+    font-size: 12px;
+    margin-top: 15px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 2rem;
+        }
+                /* Línea de navegación (abajo) */
+                .nav-bar {
+            width: 100%;
+            position: fixed;
+            bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-line {
+            width: 150px;
+            height: 5px;
+            background: rgb(0, 0, 0);
+            border-radius: 10px;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
     <h1>Has enviado $0,01CAD a <br> Belka Cova.</h1>
-    <p>Informaremos inmediatamente a Belka <br> de que le has enviado dinero.
+    <p>Informaremos inmediatamente a Belka Cova de que le has enviado dinero.
        Puedes ver los detalles en Actividad si los necesitas más adelante.</p>
 
     <div class="contenedor-botones">
         <div class="boton" onclick="alert('Operación completada')">Hecho</div>
         <a href="#" class="enlace">Enviar más</a>
     </div>
-
+    <!-- Línea de navegación inferior -->
+    <div class="nav-bar">
+        <div class="nav-line"></div>
+    </div>
 </body>
 </html>
