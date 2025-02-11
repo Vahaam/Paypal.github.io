@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Envío</title>
+    <style>
+        body {
+            font-family: 'wof2';
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+            padding-bottom: 80px; /* Para evitar que el texto se solape con los botones */
+        }
+
+        @font-face {
+  font-family: 'wof3';
+  src: url('PayPalSansSmall-Medium-Klim.ttf');
+}
+        @font-face {
+      font-family: 'wof';
+      src: url('PayPalOpen-Bold.woff2') format('woff2');
+    }
+    @font-face {
+  font-family: 'wof2';
+  src: url('PayPal Sans Big.ttf');
+}
+        h1 {
+            font-family: 'wof';
+            font-weight: bold;
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 0px 12px 10px 12px;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+        }
+        p {
+            font-family: 'wof2';
+            letter-spacing: -0.5px;
+            font-weight: 100;
+            font-size: 15px;
+    color: #363636;
+    margin: 0.5rem 1.5rem 0rem 1.5rem;
+        }
+        .contenedor-botones {
+            position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+        }
+        .boton {
+            width: 83%;
+            max-width: 400px;
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            padding: 15px;
+            border-radius: 30px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .enlace {
+            font-family: wof;
+            color: #0000ed;
+    font-size: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Has enviado $0,01CAD a <br> Belka Cova.</h1>
+    <p>Informaremos inmediatamente a Belka <br> de que le has enviado dinero.
+       Puedes ver los detalles en Actividad si los necesitas más adelante.</p>
+
+    <div class="contenedor-botones">
+        <div class="boton" onclick="alert('Operación completada')">Hecho</div>
+        <a href="#" class="enlace">Enviar más</a>
+    </div>
+
+</body>
+</html>
